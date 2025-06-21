@@ -9,7 +9,7 @@ def root():
 
 @app.get("/obaid/")
 def read_obaid():
-    return {"message": "Its, obaid here!"}
+    return {"message": "Its, obaid here ok!"}
 
 class Item(BaseModel):
     id: int 
