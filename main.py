@@ -15,6 +15,10 @@ def read_obaid():
 def read_jamil():
     return {"message": "Its jamil CEO of Softbuilds!"}
 
+@app.get("/ahmed/")
+def read_ahmed():
+    return {"message": "Its Ahmed, the CTO of Softbuilds!"}
+
 class Item(BaseModel):
     id: int 
     name: str
