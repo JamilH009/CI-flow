@@ -5,7 +5,11 @@ app = FastAPI()
 
 @app.get("/")
 def root():
-    return {"message": "FastAPI CI is working"}
+    return {"message": "Chal raha hai fastapi ka server!"}
+
+@app.get("/obaid/")
+def read_obaid():
+    return {"message": "Its, obaid here ok!"}
 
 class Item(BaseModel):
     id: int 
