@@ -3,6 +3,10 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
+@app.get("/")
+def root():
+    return {"message": "FastAPI CI is working"}
+
 class Item(BaseModel):
     id: int 
     name: str
