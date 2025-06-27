@@ -3,10 +3,10 @@ name: FastAPI CI
 on:
   push:
     branches:
-      - main
+      - "**" # Trigger on push to any branch
   pull_request:
     branches:
-      - main
+      - main # Trigger on PRs targeting main
 
 jobs:
   build-and-push:
