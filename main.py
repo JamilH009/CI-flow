@@ -17,7 +17,9 @@ def read_jamil():
 
 @app.get("/ahmed/")
 def read_ahmed():
-    return {"message": "Its Ahmed, the CTO of Softbuilds!"}
+    return {"message": "Its Ahmed, the CTO of Softbuilds! "}
+
+
 
 class Item(BaseModel):
     id: int 
